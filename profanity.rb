@@ -1686,7 +1686,7 @@ Thread.new {
 				oc[:start] = 0
 			end
 
-			if current_stream.nil? or stream_handler[current_stream] or (current_stream =~ /^(?:death|logons|thoughts|voln|familiar|assess|ooc)$/)
+			if current_stream.nil? or stream_handler[current_stream] or (current_stream =~ /^(?:death|logons|thoughts|voln|familiar|assess|ooc|shopWindow)$/)
 				SETTINGS_LOCK.synchronize {
 					HIGHLIGHT.each_pair { |regex,colors|
 						pos = 0
@@ -1754,7 +1754,7 @@ Thread.new {
 							window.add_string(text, line_colors)
 							need_update = true
 						end
-					elsif current_stream =~ /^(?:death|logons|thoughts|voln|familiar|assess|ooc)$/
+					elsif current_stream =~ /^(?:death|logons|thoughts|voln|familiar|assess|ooc|shopWindow)$/
 						if window = stream_handler['main']
 							if PRESET[current_stream]
 								line_colors.push(:start => 0, :fg => PRESET[current_stream][0], :bg => PRESET[current_stream][1], :end => text.length)
