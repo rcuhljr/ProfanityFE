@@ -104,7 +104,7 @@ class ExpWindow < Curses::Window
       addstr(skill)	
       addstr("\n")
 		end
-		refresh
+		noutrefresh
 	end
 end
 
