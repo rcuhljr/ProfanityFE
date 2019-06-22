@@ -28,10 +28,12 @@
     <highlight fg="&green;">^\[DRPrime\]</highlight>
     <highlight fg="&yellow;">^\[General\]</highlight>
     <highlight fg="&yellow;">^\[Trade\]</highlight>
+    <highlight fg="&yellow;">^\[Local\]</highlight>
     <highlight fg="&yellow;">^\[code\]</highlight>
     <highlight fg="&yellow;">^\[drscripts\]</highlight>
     <highlight fg="&blue;">^\[Private(?:To)?\]</highlight>
     <highlight fg="&blue;">^--- Lich:.*</highlight>
+    <highlight fg='88aaff'>%.*?%</highlight>
 
     <highlight fg='808000'>^Roundtime.*</highlight>
     <highlight fg='808000'>^\[Roundtime.*</highlight>
@@ -58,8 +60,12 @@
     <highlight fg="&magenta;">.*ruining your hiding place\.$|^You are no longer hidden\.$|^\s*You are (?:stunned|knocked to the ground).*|^You are unable to remain hidden!$|^You are visible again\.$|^You fade into sight\.$|^You fade into view.*|^You feel drained!$|^You have overextended yourself!$|^You feel yourself going into shock!$</highlight>
     <highlight fg="&magenta;">^.*(?:falls slack against the floor|falls slack against the ground|falls to the floor, motionless|falls to the ground dead|falls to the ground motionless|and dies|and lies still|goes still|going still)\.$</highlight>
     <highlight fg="&magenta;">^.* is stunned!$|^You come out of hiding\.$</highlight>
+    <highlight fg="&magenta;">[Aa]lmanac</highlight>
     <highlight fg="&magenta;">.*ruining your hiding place\.$|^You are no longer hidden\.$|^\s*You are (?:stunned|knocked to the ground).*|^You are unable to remain hidden!$|^You are visible again\.$|^You fade into sight\.$|^You fade into view.*|^You feel drained!$|^You have overextended yourself!$|^You feel yourself going into shock!$</highlight>
     <highlight fg="&green;">^.*\*\*\*STATUS\*\*\*.*</highlight>
+    <highlight fg="&red;">.*Geysers of uncontrolled mana suddenly erupt.*</highlight>
+    <highlight fg="&red;">.*hand like a frail egg shell*</highlight>
+    <highlight fg="&red;">The .* was carrying (?:some|a)*</highlight>
 
     <!--- Death Messages --> 
     
@@ -74,21 +80,25 @@
     <highlight fg="&dark-red;">^.*eyes roll back in its head.*</highlight>
     <highlight fg="&dark-red;">^.*one last time and collapses.*</highlight>
     <highlight fg="&dark-red;">^A storm bull expires.*</highlight> 
+    <highlight fg="&dark-red;">^.*is next.</highlight>
 
     <!-- Character Name Highlights-->
     <highlight fg="&monokai-magenta;">[Ss]arvatt</highlight>
+    <highlight fg="&monokai-magenta;">[Bb]ibbleberry</highlight>
     <highlight fg="&monokai-magenta;">[Ee]ngorged</highlight>
     <highlight fg="&monokai-magenta;">[Cc]hilling</highlight>
-    <highlight fg="&monokai-magenta;">[Vv]une</highlight>
+    <highlight fg="&monokai-magenta;">[Hh]eji</highlight>
     <highlight fg="&monokai-magenta;">[Mm]uten</highlight>
+    <highlight fg="&monokai-magenta;">[Gg]ooseberry</highlight>
     <highlight fg="&royal-purple;">[Ee]mbrace</highlight>
+    <highlight fg="&green;">[Mm]iranthe</highlight>
     <highlight fg="&green;">[Tt]hevelar</highlight>
     <highlight fg="&green;">[Ff]lixx</highlight>
     <highlight fg="&green;">[Tt]yesha</highlight>
     <highlight fg="&green;">[Ss]olire</highlight>
     <highlight fg="&green;">[Zz]asana</highlight>
     <highlight fg="&yellow;">[Aa]tanamir</highlight>
-    <highlight fg="&yellow;">[Tt]horn</highlight>
+    <highlight fg="&yellow;">Thorn</highlight>
     <highlight fg="&yellow;">[Rr]emigius</highlight>
     <highlight fg="&yellow;">[Jj]orvald</highlight>
     <highlight fg="&yellow;">[Mm]align</highlight>
@@ -114,14 +124,13 @@
     <highlight fg="&yellow;">[Bb]eeya</highlight>
     <highlight fg="&yellow;">[Aa]nnandale</highlight>
     <highlight fg="&yellow;">[Mm]ilanie</highlight>
+    <highlight fg="&yellow;">[Gg]litter</highlight>
     <highlight fg="&yellow;">[Bb]inu</highlight>
-    <highlight fg="&yellow;">[Cc]huno</highlight>
-    <highlight fg="&yellow;">[Mm]elbourne</highlight>
-    <highlight fg="&yellow;">[Ss]sarek</highlight>
     <highlight fg="&yellow;">[Yy]ndass</highlight>
     <highlight fg="&yellow;">[Nn]atarian</highlight>
     <highlight fg="&yellow;">[Nn]arash</highlight>
     <highlight fg="&yellow;">[Nn]atheras</highlight>
+    <highlight fg="&yellow;">[Cc]huno</highlight>
     <highlight fg="&yellow;">[Cc]rannach</highlight>
     <highlight fg="&yellow;">[Jj]onas</highlight>
     <highlight fg="&yellow;">[Rr]iphik</highlight>
@@ -144,7 +153,13 @@
     <highlight fg="&yellow;">[Kk]erizon</highlight>
     <highlight fg="&yellow;">[Aa]radar</highlight>
     <highlight fg="&yellow;">[Ll]eustyin</highlight>
-    <highlight fg="&yellow;">[Zz]haryn</highlight>
+    <highlight fg="&yellow;">[Gg]linganklee</highlight>
+    <highlight fg="&yellow;">[Dd]artellum</highlight>
+    <highlight fg="&yellow;">[Hh]hshikath</highlight>
+    <highlight fg="&yellow;">[Ss]caley</highlight>
+    <highlight fg="&yellow;">[Dd]ijkstra</highlight>
+    <highlight fg="&yellow;">[Jj]onas</highlight>
+    <highlight fg="&yellow;">[Qq]uillith</highlight>
 
     <!-- Trolls --> 
     <highlight fg="&red;">[Ff]ahijeck</highlight>
@@ -152,12 +167,54 @@
     <highlight fg="&red;">[Zz]ehira</highlight>
     <highlight fg="&red;">[Cc]ayra</highlight>
     <highlight fg="&red;">[Jj]ondong</highlight>
-    <highlight fg="&red;">[Nn]idaeya</highlight> 
+    <highlight fg="&red;">[Nn]ideaya</highlight> 
     <highlight fg="&red;">[Aa]rtilius</highlight>
     <highlight fg="&red;">[Ii]ssidos</highlight>
     <highlight fg="&red;">[Gg]ander</highlight>
-    <highlight fg="&red;">[Aa]nnieka</highlight>
     <highlight fg="&red;">[Aa]umaru</highlight>
+    <highlight fg="&red;">[Cc]aidie</highlight>
+    <highlight fg="&red;">[Bb]lackro</highlight>
+    <highlight fg="&red;">[Ss]lipped</highlight>
+    <highlight fg="&red;">[Ss]lobbidetr</highlight>
+    <highlight fg="&red;">[Aa]ristokrat</highlight>
+
+
+    <!-- EXP level highlights-->
+    <highlight fg="&red;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(0/34\)</highlight>
+    <highlight fg="&yellow;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(1/34\)</highlight>
+    <highlight fg="&yellow;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(2/34\)</highlight>
+    <highlight fg="&yellow;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(3/34\)</highlight>
+    <highlight fg="&yellow;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(4/34\)</highlight>
+    <highlight fg="&yellow;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(5/34\)</highlight>
+    <highlight fg="&yellow;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(6/34\)</highlight>
+    <highlight fg="&magenta;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(7/34\)</highlight>
+    <highlight fg="&magenta;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(8/34\)</highlight>
+    <highlight fg="&magenta;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(9/34\)</highlight>
+    <highlight fg="&magenta;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(10/34\)</highlight>
+    <highlight fg="&magenta;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(11/34\)</highlight>
+    <highlight fg="&white;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(12/34\)</highlight>
+    <highlight fg="&white;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(13/34\)</highlight>
+    <highlight fg="&white;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(14/34\)</highlight>
+    <highlight fg="&white;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(15/34\)</highlight>
+    <highlight fg="&white;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(16/34\)</highlight>
+    <highlight fg="&white;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(17/34\)</highlight>
+    <highlight fg="&white;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(18/34\)</highlight>
+    <highlight fg="&white;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(19/34\)</highlight>
+    <highlight fg="&white;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(20/34\)</highlight>
+    <highlight fg="&white;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(21/34\)</highlight>
+    <highlight fg="&white;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(22/34\)</highlight>
+    <highlight fg="&white;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(23/34\)</highlight>
+    <highlight fg="&white;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(24/34\)</highlight>
+    <highlight fg="&white;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(25/34\)</highlight>
+    <highlight fg="&white;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(26/34\)</highlight>
+    <highlight fg="&white;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(27/34\)</highlight>
+    <highlight fg="&white;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(28/34\)</highlight>
+    <highlight fg="&white;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(29/34\)</highlight>
+    <highlight fg="&cyan;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(30/34\)</highlight>
+    <highlight fg="&cyan;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(31/34\)</highlight>
+    <highlight fg="&cyan;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(32/34\)</highlight>
+    <highlight fg="&cyan;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(33/34\)</highlight>
+    <highlight fg="&cyan;">\w+(\s\w+)?\:\s+\d+\s\d{2}.\s\w+(\s\w+)?\s+\(34/34\)</highlight>
 
     <!-- Script commands sent to game-->
     <highlight fg='584848'>^\[[\w-]+\]></highlight>
@@ -165,8 +222,8 @@
     <preset id='speech' fg="&yellow;"/>
     <preset id='roomName' fg="&green;"/>
     <preset id='monsterbold' fg="&red;"/>
-    <preset id='familiar' bg='008080'/>
-    <preset id='thoughts' bg='008080'/>
+    <preset id='familiar' bg="&blue;"/>
+    <preset id='thoughts' bg="&blue;"/>
     <!--<key id='alt'>
         <key id='f' macro='something'/>
     </key>-->
@@ -195,7 +252,7 @@
     <key id='num_4' macro='\xw\r'/>
     <key id='num_5' macro='\xout\r'/>
     <key id='num_6' macro='\xe\r'/>
-    <key id='num_7' macro='\xnw\r'/>
+    <key id='262' macro='\xnw\r'/>
     <key id='num_8' macro='\xn\r'/>
     <key id='num_9' macro='\xne\r'/>
     <key id='alt+up' action='send_second_last_command'/>
@@ -205,7 +262,8 @@
     <key id='ctrl+3' macro='\x;e loop do waitfor("DECLINE"); fput("accept"); fput("stow right"); end'/>
     <key id='ctrl+4' macro='\x;e loop do start_script("update-shops",[""]); pause 60*60; end'/>
     <layout id='default'>
-        <window class='text' top='10' left='0' width='cols-0' height='lines-13' value='main' buffer-size='3000' log='true' bg="&black;" />
+        <window class='text' top='10' left='0' width='cols-35' height='lines-13' value='main' buffer-size='3000' log='true' bg="&black;" />
+        <window class='exp' top='11' left='cols-35' width='35' height='lines-23' value='exp' buffer-size='2000' log='true' bg="&black;"/>
         <window class='text' top='0' left='0' height='8' width='(cols/3)+20' value='lnet,thoughts,voln' buffer-size='1000' timestamp='true' log='true' />
         <window class='text' top='0' left='(cols/3)+20' height='8' width='(cols/3)' value='talk,whispers,ooc' buffer-size='1000' timestamp='true' />
         <window class='text' top='0' left='(2*cols/3)+20' height='8' width='(cols/3)-20' value='death,logons' buffer-size='1000' timestamp='true' log='true'/>
@@ -230,11 +288,11 @@
 
         <!-- bottom bar layout -->
         <window class='countdown' top='lines-1' left='8' width='11' height='1' label='rndtime:' value='roundtime' fg='808080,ffffff,ffffff,ffffff' bg='nil,ff0000,0000ff'/>
-        <window class='progress' top='lines-1' left='20' width='&bar-width;' height='1' label='H:' value='health' fg="&white;" bg="&dark-red;"/>
-        <window class='progress' top='lines-1' left='20 + &bar-width; + 1' width='&bar-width;' height='1' label='M:' value='mana' fg="&white;" bg="&blue;"/>
-        <window class='progress' top='lines-1' left='20 + (&bar-width;*2) + 2' width='&bar-width;' height='1' label='Sp:' value='spirit' fg="&white;" bg="&material-purple;"/>
-        <window class='progress' top='lines-1' left='20 + (&bar-width;*3) + 3' width='&bar-width;' height='1' label='St:' value='stamina' fg='&white;' bg='&material-green;'/>
-        <window class='progress' top='lines-1' left='20 + (&bar-width;*4) + 4' width='&bar-width;' height='1' label='C:' value='concentration' fg='&white;' bg='&material-bluegrey;'/>
+        <window class='progress' top='lines-1' left='20' width='&bar-width;' height='1' label='Health:' value='health' fg="&white;" bg="&dark-red;"/>
+        <window class='progress' top='lines-1' left='20 + &bar-width; + 1' width='&bar-width;' height='1' label='Mana:' value='mana' fg="&white;" bg="&blue;"/>
+        <window class='progress' top='lines-1' left='20 + (&bar-width;*2) + 2' width='&bar-width;' height='1' label='Spirit:' value='spirit' fg="&white;" bg="&material-purple;"/>
+        <window class='progress' top='lines-1' left='20 + (&bar-width;*3) + 3' width='&bar-width;' height='1' label='Stam:' value='stamina' fg='&white;' bg='&material-green;'/>
+        <window class='progress' top='lines-1' left='20 + (&bar-width;*4) + 4' width='&bar-width;' height='1' label='Concen:' value='concentration' fg='&white;' bg='&material-bluegrey;'/>
 
         <!-- compass -->
         <window class='indicator' top='lines-3' left='0' height='1' width='1' label='^' value='compass:up' fg='888888,0000ff'/>
