@@ -577,21 +577,11 @@ for arg in ARGV
 	end
 end
 
-file_name = "profanity#{LOG_FILENAME || PORT}-game.log"
-logger = Logger.new(File.join(LOG_DIR, file_name), 'daily')
-
-logger.formatter = proc do |_, datetime, _, msg|
-	"#{datetime}:#{msg}\n"
-end
-
-logger.sev_threshold = Logger::INFO
-
-def log(value)
-		File.open('profanity.log', 'a') { |f| f.puts value }
-end
-
 unless defined?(PORT)
 	PORT = 8000
+end
+unless defined?(LOG_FILENAME)
+	LOG_FILENAME = PORT
 end
 unless defined?(DEFAULT_COLOR_ID)
 	DEFAULT_COLOR_ID = 7
@@ -608,6 +598,19 @@ end
 
 DEFAULT_COLOR_CODE = Curses.color_content(DEFAULT_COLOR_ID).collect { |num| ((num/1000.0)*255).round.to_s(16) }.join('').rjust(6, '0')
 DEFAULT_BACKGROUND_COLOR_CODE = Curses.color_content(DEFAULT_BACKGROUND_COLOR_ID).collect { |num| ((num/1000.0)*255).round.to_s(16) }.join('').rjust(6, '0')
+
+file_name = "profanity#{LOG_FILENAME}-game.log"
+logger = Logger.new(File.join(LOG_DIR, file_name), 'daily')
+
+logger.formatter = proc do |_, datetime, _, msg|
+	"#{datetime}:#{msg}\n"
+end
+
+logger.sev_threshold = Logger::INFO
+
+def log(value)
+		File.open('profanity.log', 'a') { |f| f.puts value }
+end
 
 unless File.exists?(SETTINGS_FILENAME)
 
